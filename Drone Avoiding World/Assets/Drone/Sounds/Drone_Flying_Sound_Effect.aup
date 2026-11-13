@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Drone_Flying_Sound_Effect_data" version="1.3.0" audacityversion="2.3.2" sel0="10.0541447402" sel1="10.0541447402" vpos="0" h="0.0000000000" zoom="85.7357858149" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf62.3.100"/>
+	</tags>
+	<wavetrack name="Drone_Flying_Sound_Effect" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="482599">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808858.au" len="183204" min="-0.354858" max="0.374451" rms="0.065979"/>
+				</waveblock>
+				<waveblock start="183204">
+					<simpleblockfile filename="e0808c66.au" len="151097" min="-0.290985" max="0.310211" rms="0.063789"/>
+				</waveblock>
+				<waveblock start="334301">
+					<simpleblockfile filename="e0808896.au" len="148298" min="-0.382843" max="0.401154" rms="0.088359"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Drone_Flying_Sound_Effect" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="482599">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808437.au" len="183204" min="-0.452423" max="0.407043" rms="0.076268"/>
+				</waveblock>
+				<waveblock start="183204">
+					<simpleblockfile filename="e08089f9.au" len="151097" min="-0.329254" max="0.324951" rms="0.073466"/>
+				</waveblock>
+				<waveblock start="334301">
+					<simpleblockfile filename="e080844f.au" len="148298" min="-0.422363" max="0.466125" rms="0.101485"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
