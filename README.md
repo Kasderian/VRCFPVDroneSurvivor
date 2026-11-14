@@ -43,6 +43,8 @@ The project focuses on AI behavior, multiplayer synchronization, and a lightweig
 
 ## The Drones
 
+![World Screenshot](ReadMeImages/VRChat_2026-11-09_12-49-28.771_1920x1080.png)
+
 ### Chaser
 A quadcopter FPV Kamikaze drone that hunts players by sight. It flies on the NavMesh, patrols in a growing clockwise ring, and chases the last seen position of a player. Outdoors it commits to a fast dive at the player's feet. When it cannot dive (indoors, too close, no clear line) it rushes the player and detonates next to them.
 
@@ -80,6 +82,8 @@ The enemy AI manager that decides where drones go. It stores the last spotted po
 
 Open this world in VRChat: https://vrchat.com/home/world/wrld_2aeadf62-ee1b-43d8-b26a-811ad68d75f2/info
 
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-58.002_1920x1080.png)
+
 1. Use the world canvas to press **Join** and enter the game (max 6 players). Everyone else stays an observer.
 2. Press **Claim Host** to become the Game Host. Only the Game Host can change the difficulty.
 3. Pick a difficulty from 1 to 5 (0 stops the game).
@@ -88,6 +92,8 @@ Open this world in VRChat: https://vrchat.com/home/world/wrld_2aeadf62-ee1b-43d8
 6. Get from Point A to Point B without being spotted or killed.
 
 If you die you are sent to the cemetery. You come back after 30 seconds, or sooner by walking into the revive zone near Point A.
+
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-42-03.971_1920x1080.png)
 
 ---
 
@@ -263,3 +269,15 @@ With the help of Claude, ChatGPT and Gemini.
 
 <!-- Specify your chosen license here -->
 Credit me and use it as how you like. Please don't break any laws or any rules to Unity and VRChat.
+
+![World Screenshot](ReadMeImages/VRChat_2026-10-29_21-29-34.975_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-10-31_21-39-52.266_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-10-31_22-39-35.558_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-02_21-00-59.411_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-09_14-52-47.566_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-09_15-40-34.031_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-40.794_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-49.768_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-42-22.209_1920x1080.png)
+
+
