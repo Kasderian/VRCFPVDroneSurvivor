@@ -263,7 +263,21 @@ With the help of Claude, ChatGPT and Gemini.
 
 ## Third-Party Assets & Resources
 
-<!-- List any third-party assets, sounds or models you used, with links -->
+https://assetstore.unity.com/publishers/4986
+https://assetstore.unity.com/packages/3d/vegetation/trees/european-forests-realistic-trees-229716
+https://assetstore.unity.com/packages/2d/textures-materials/nature/grass-flowers-pack-free-138810
+https://assetstore.unity.com/packages/2d/textures-materials/sky/procedural-skybox-2-0-lite-332554
+https://allpngfree.com/sunflower-plant-png-transparent-vhah
+https://www.turbosquid.com/FullPreview/772551?dd_referrer=
+https://polyhaven.com/a/burned_ground_01
+https://sketchfab.com/3d-models/low-poly-ak-12-c4a69e36c59a480092d5ac91673713f0
+https://sketchfab.com/3d-models/low-poly-hk416-059e968f6f764357880807c62c117ab7
+https://sketchfab.com/3d-models/low-poly-mossberg-590-c0551a6b841145f7a8e59e9304728f1f
+https://pixabay.com/sound-effects/film-special-effects-gun-reload-123781/
+https://pixabay.com/sound-effects/film-special-effects-gunshot-352466/
+https://www.youtube.com/watch?v=t4FoCnVLgag
+https://pixabay.com/sound-effects/film-special-effects-medium-explosion-40472/
+https://pixabay.com/sound-effects/musical-dry-field-grass-rustling-482893/
 
 ---
 
