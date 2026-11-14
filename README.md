@@ -18,7 +18,7 @@ https://vrchat.com/home/world/wrld_2aeadf62-ee1b-43d8-b26a-811ad68d75f2/info
 
 FPV Drone Survivor World is a VRChat world built around one question: How horrible is drone warfare?
 
-Players join the game from an in-world canvas, grab a rifle or shotgun at the start area, and move from Point A to Point B across forest and fields. Drones are spawned in waves based on where players have been seen by spotter drones, and they get more numerous as the difficulty goes up. Everyone has 1 HP, and so does every drone.
+Players join the game from an in-world canvas, grab a rifle or shotgun at the start area, and move from Point A to Point B across forest and fields. Drones are spawned in waves based on where players have been seen by spotter drones, and they get more numerous as the difficulty goes up. Everyone has 1 HP, and so does every drone. The drones play fair: none of them cheat. They have no wallhack and only react to players they can actually see.
 
 The project focuses on AI behavior, multiplayer synchronization, and a lightweight, optimized ballistic system within the limits of VRChat's Udon environment.
 
@@ -38,6 +38,8 @@ The project focuses on AI behavior, multiplayer synchronization, and a lightweig
 - **Death and revival** – Killed players go to a "cemetery" and come back after a timer or by walking into a revive zone.
 - **Minimap** – A top-down camera that renders on a timer instead of every frame.
 - **Network optimized** – Spotters need almost no network traffic, and bullets are never synced one by one.
+- **Fair optimized** – Spotters need almost no network traffic, and bullets are never synced one by one.
+- **No cheating** – Drones have no wallhack and no radar. They only know where you are when they actually see you: view cone, range limit and line-of-sight raycasts, blocked by walls, trees and terrain. Hide, and they go to where they last saw you, not to where you really are.
 
 ---
 
@@ -117,6 +119,9 @@ Every drone, gun and player system is designed for multiple players:
 - The **shooter's client** decides whether a bullet hit a drone.
 - Each **player's own client** decides whether they were caught in a blast or touched by a drone, so there is no latency unfairness for the victim.
 - Drones that fly freely use VRC Object Sync plus a small Manual-sync child object for their state. Spotters use server time instead.
+
+### Fair Play
+None of the drones cheat. Chasers and Droppers must see a player through their view cone and line-of-sight checks, and Spotters must see at least two of four body points. The Captain only knows where players are from these sightings, and a drone that loses sight of you goes to the last seen position, not your real one.
 
 ---
 
