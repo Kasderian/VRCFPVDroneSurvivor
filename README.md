@@ -8,7 +8,7 @@ https://vrchat.com/home/world/wrld_2aeadf62-ee1b-43d8-b26a-811ad68d75f2/info
 
 ---
 
-## Screenshots
+## Thumbnail
 
 ![World Thumbnail](https://github.com/Kasderian/VRCFPVDroneSurvivor/blob/main/Drone%20Avoiding%20World/Assets/Thumbnail/900px-World_Thumbnail_Template.png)
 
@@ -304,6 +304,10 @@ https://pixabay.com/sound-effects/musical-dry-field-grass-rustling-482893/
 
 <!-- Specify your chosen license here -->
 Credit me and use it as how you like. Please don't break any laws or any rules to Unity and VRChat.
+
+---
+
+## Screenshots
 
 ![World Screenshot](ReadMeImages/VRChat_2026-10-29_21-29-34.975_1920x1080.png)
 ![World Screenshot](ReadMeImages/VRChat_2026-10-31_21-39-52.266_1920x1080.png)
