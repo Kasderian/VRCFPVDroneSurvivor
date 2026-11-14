@@ -27,7 +27,7 @@ The project focuses on AI behavior, multiplayer synchronization, and a lightweig
 ## Features
 
 - **Three drone types** – Chasers (FPV-style kamikaze drones), Droppers (high-altitude bombers) and Spotters (fixed-wing recon).
-- **Difficulty 0-5** – Set from a world-space canvas by the Game Host. 0 stops the game and resets every robot.
+- **Difficulty 0-5** – Set from a world-space canvas by the Game Host. 0 stops the game and resets every drone.
 - **Game Host system** – Anyone can claim the Game Host role. The Game Host's client runs all drone AI, everyone else only displays.
 - **Player roster** – Up to 6 playing players. Everyone else is an observer and is ignored by drones but they can shoot the drones too.
 - **Realistic ballistics** – Bullets simulated with gravity and a raycast per frame, no script per bullet. Shotgun pellets lose speed with distance.
@@ -94,6 +94,8 @@ Open this world in VRChat: https://vrchat.com/home/world/wrld_2aeadf62-ee1b-43d8
 If you die you are sent to the cemetery. You come back after 30 seconds, or sooner by walking into the revive zone near Point A.
 
 ![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-42-03.971_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-40.794_1920x1080.png)
+![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-49.768_1920x1080.png)
 
 ---
 
@@ -126,7 +128,7 @@ Every drone, gun and player system is designed for multiple players:
 | Platform | VRChat |
 | Scripting | UdonSharp / C# |
 | Networking | VRChat Udon Networking, VRC Object Sync |
-| Robot Navigation | Unity NavMesh and NavMeshLinks (Chasers) |
+| Drone Navigation | Unity NavMesh and NavMeshLinks (Chasers) |
 | UI | Unity UI / TextMeshPro (world-space canvases) |
 | Scope | Second Camera + Render Texture |
 
@@ -207,8 +209,8 @@ Assets/
 ### Setup notes
 
 - **Layers:** Drone hit boxes sit on layer 30 `OpFor`. Tick it in `BallisticManager`'s Hit Mask, and leave it out of the drones' obstacle masks.
-- **BallisticManager Hit Mask:** Default, Environment and robot layers. Not Pickup, Player, PlayerLocal or UI.
-- **Spotter vision mask:** Only the Default layer, so pickups, players and robots never block the rays.
+- **BallisticManager Hit Mask:** Default, Environment and drone layers. Not Pickup, Player, PlayerLocal or UI.
+- **Spotter vision mask:** Only the Default layer, so pickups, players and drones never block the rays.
 - **Chaser and Dropper obstacle mask:** Walls, terrain, buildings and trees. Exclude player layers.
 - **NavMeshLinks:** Place them on both sides of a window or obstacle so Chasers can pass through or climb over.
 - **Scene objects:** Point B, two or more LaunchAreas, Spotter waypoints (children of one parent) and Spotter areas (children of another parent, X scale = radius).
@@ -221,7 +223,7 @@ Most behavior is tuned through the exposed Unity Inspector settings.
 
 Examples include:
 
-- Robots per wave, wave cooldown and robot respawn time (`OpForCaptain`).
+- Drones per wave, wave cooldown and drone respawn time (`OpForCaptain`).
 - Flight heights, speeds, vision and blast radii (`DroneChaser`, `DroneDropper`).
 - Minimum Spotter count, flight speed, shot cooldown and spotting speed (`SpotterManager`).
 - Fire rate, muzzle velocity, ammo capacity, reload time and shotgun pellets (`TwoHandGun`).
@@ -276,8 +278,6 @@ Credit me and use it as how you like. Please don't break any laws or any rules t
 ![World Screenshot](ReadMeImages/VRChat_2026-11-02_21-00-59.411_1920x1080.png)
 ![World Screenshot](ReadMeImages/VRChat_2026-11-09_14-52-47.566_1920x1080.png)
 ![World Screenshot](ReadMeImages/VRChat_2026-11-09_15-40-34.031_1920x1080.png)
-![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-40.794_1920x1080.png)
-![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-41-49.768_1920x1080.png)
 ![World Screenshot](ReadMeImages/VRChat_2026-11-14_14-42-22.209_1920x1080.png)
 
 
